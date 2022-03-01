@@ -59,3 +59,5 @@
 - 低调使用，干完工作才是最重要的啦！
 
   ![figure3](./figure/figure3.jpeg)
+
+（↑ Thanks for Tianyi's picture!)
