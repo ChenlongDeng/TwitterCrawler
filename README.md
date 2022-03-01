@@ -54,6 +54,8 @@
 
 - 控制爬取速度，爬太快是可能被Twitter封ip的啦
 
+- 喜欢它就Star它吧！
+
 - 低调使用，干完工作才是最重要的啦！
 
   ![figure3](./figure/figure3.jpeg)
