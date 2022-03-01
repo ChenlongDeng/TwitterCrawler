@@ -51,5 +51,9 @@
 ## Little Advice
 
 - 网络请求配置在一段时间后会失效，若发生错误可以考虑检查更新相应请求配置
+
 - 控制爬取速度，爬太快是可能被Twitter封ip的啦
+
 - 低调使用，干完工作才是最重要的啦！
+
+  ![figure3](/Users/dengchenlong/Documents/Github/TwitterCrawler/figure/figure3.jpeg)
