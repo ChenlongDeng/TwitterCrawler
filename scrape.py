@@ -2,7 +2,7 @@ import json
 import requests
 from tqdm import tqdm
 
-username = 'Beijing2022' # 填写你要搜索的用户名称
+username = 'beijing2022' # 填写你要搜索的用户名称
 since_date = '2014-01-01' # 填写筛选推文的开始时间
 until_date = '2022-03-01' # 填写筛选推文的结束时间
 tweets = []
@@ -29,7 +29,13 @@ tweet_iterator = tqdm(range(max_tweetnum), ncols=120)
 
 
 while len(tweets) < max_tweetnum:
-    tweet_data = requests.get('https://twitter.com/i/api/2/search/adaptive.json', headers=headers, params=params).json()
+    try:
+        tweet_data = requests.get('https://twitter.com/i/api/2/search/adaptive.json', headers=headers, params=params).json()
+    except:
+        break
+
+    if len(tweet_data['globalObjects']['tweets']) == 0:
+        break
     
     update_num = 0
     for tweet in tweet_data['globalObjects']['tweets']:
